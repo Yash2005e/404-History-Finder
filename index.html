@@ -1,22 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Budget Manager</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Budget Manager</h1>
-  <form action="/calculate" method="POST">
-    <label for="salary">Enter your salary:</label>
-    <input type="number" name="salary" id="salary" required>
-    <button type="submit">Submit</button>
-  </form>
-  <% if(budgetData) { %>
-    <h2>Budget Summary</h2>
-    <!-- Chart.js or similar will go here -->
-    <div>
-      <canvas id="budgetChart"></canvas>
-    </div>
-  <% } %>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task..." required>
+      <button type="submit">Add</button>
+    </form>
+    <ul id="todo-list"></ul>
+    <button id="clear-completed">Clear Completed</button>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
