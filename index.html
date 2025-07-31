@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>To-Do List</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 History Finder</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>To-Do List</h1>
-    <form id="todo-form">
-      <input type="text" id="todo-input" placeholder="Add a new task..." required>
-      <button type="submit">Add</button>
-    </form>
-    <ul id="todo-list"></ul>
-    <button id="clear-completed">Clear Completed</button>
+    <h1>404 History Finder</h1>
+    <p class="subtitle">Find archived versions of vanished websites</p>
+    <input type="text" id="urlInput" placeholder="Enter a dead URL..." />
+    <button onclick="checkArchive()">🔍 Check Archive</button>
+    <div id="result"></div>
   </div>
-  <script src="app.js"></script>
+
+  <footer>Built with ❤️ using the Wayback Machine API</footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
